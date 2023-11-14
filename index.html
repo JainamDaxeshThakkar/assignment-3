@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <title>Skittles Candy</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="skittleslogo-10-26-21.svg" alt="Skittles Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#history">History</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#facts">Facts</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <section class="hero">
+        <h1>Welcome to Skittles Candy</h1>
+        <p>Discover the rainbow of flavors!</p>
+    </section>
+    <section id="history" class="content history">
+        <div class="history-image">
+            <img src="./img/history.jpeg" alt="Skittles History Image" style="float: left; margin-right: 20px;">
+        </div>
+        <div class="history-text">
+            <h2>History of Skittles</h2>
+            <p>Skittles were first made commercially in 1974 by a British company. An animated television advertisement from that year bears the logo of the "Galaxy" company and is copyrighted by Jack Candies Ltd, a Mars distribution subsidiary. They were first introduced in North America in 1979 as an import confectionery. In 1982, domestic production of Skittles began in the United States.</p>
+            <p>The name of the candy, Skittles, comes from the sports game of the same name, named as such for the resemblance of the sweet to items used in the game.</p>
+            <p>Skittles' "taste the rainbow" theme was created by the New York ad agency D'Arcy Masius Benton & Bowles.</p>
+        </div>
+    </section>
+    <section id="facts" class="facts">
+        <div class="facts-text">
+            <h2>Did You Know?</h2>
+        <p><strong>Unique Characteristics:</strong> Unlike many other candies, Skittles have a hard sugar shell with the letter 'S' printed on it. The interior consists mainly of sugar, corn syrup, and hydrogenated palm kernel oil along with fruit juice, citric acid, and natural and artificial flavors.</p>
+        <p><strong>Production Process:</strong> The production process of Skittles is quite interesting. The candies are made by a process called 'panning,' where the candies are tumbled in large drums while the flavor and color coatings are added.</p>
+        <p><strong>Global Reach:</strong> Skittles are sold in over 65 countries and are produced in several countries, including the United States, United Kingdom, and Australia.</p>
+    </div>
+    <div class="facts-image">
+        <img src="./img/Skittles-Louisiana-2003.jpg" alt="Interesting Skittles Fact">
+    </div>
+    </section>
+    <div>
+        <section id="nutrition" class="content">
+        <h2>Nutrition Facts</h2>
+        <p>Amount Per Serving</p>
+        <ul>
+            <li>Calories: 251</li>
+            <li>Total Fat: 2.7g (3% DV)</li>
+            <li>Saturated Fat: 2.6g (13% DV)</li>
+            <li>Trans Fat: 0.1g</li>
+            <li>Sodium: 9.3mg (0% DV)</li>
+            <li>Total Carbohydrates: 56g (20% DV)</li>
+            <li>Dietary Fiber: 0g (0% DV)</li>
+            <li>Sugars: 47g</li>
+            <li>Protein: 0.1g</li>
+        </ul>
+        <p>% Daily Values are based on a 2,000 calorie diet.</p>
+        </section>
+</div>
+    <footer>
+        <div class="logo">
+            <img src="skittleslogo-10-26-21.svg" alt="Skittles Logo">
+        </div>
+        <div class="quick-contact">
+            <h3>Contact Us</h3>
+            <section id="contact" class="content">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Number:</label>
+                        <input type="tel" id="number" name="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </section>
+            <div class="company-info">
+                <p>Skittles Candy Co.</p>
+                <p>123 Candy Lane</p>
+                <p>Email: info@skittles.com</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').onsubmit = function(event) {
+            event.preventDefault(); 
+            alert('Submitted successfully. We will get back to you soon!');
+           
+            document.getElementById('contactForm').reset();
+            
+            return false;  };
+    </script>
+</body>
+</html>
